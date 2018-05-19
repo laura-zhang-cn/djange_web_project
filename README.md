@@ -20,7 +20,7 @@ http://127.0.0.1:8000/   # remind some words such as   ".....work succefully..."
 
 ## 3. 第二部：建立视图文件，刷新访问网址时，覆盖之前默认的显示内容    
 工程目录E:\djtest\first_test\first_test\下：  
-新建 view.py  编辑内容：  
+. 新建 view.py  编辑内容：  
 
     ----------------
     from django.http import HttpResponse
@@ -34,7 +34,7 @@ http://127.0.0.1:8000/   # remind some words such as   ".....work succefully..."
     #这里自定义了两个，为了对比访问不同页面路径的内容显示差异
     ----------------
     
-打开 urls.py ，覆盖内容，也可以不覆盖，采用新增（但没成功，所以还是覆盖了..)：
+. 打开 urls.py ，覆盖内容，也可以不覆盖，采用新增（但没成功，所以还是覆盖了..)：
 
     ----------------  
     from django.conf.urls import url  
@@ -46,4 +46,8 @@ http://127.0.0.1:8000/   # remind some words such as   ".....work succefully..."
             url(r'^$',view.hpage)     # 访问 127.0.0.1:8000/  页面显示hpage的内容
     ]   
     ----------------  
-    
+  
+  . 在浏览器中分别访问 观察区别
+  http://127.0.0.1:8000/     
+  http://127.0.0.1:8000/first
+
