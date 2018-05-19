@@ -10,7 +10,7 @@ environment path  :  your-python-lib-path\site-packages\django\bin
 ## 2. 第一步：创建一个工程，并成功启动它（本地可在浏览器访问）  
 命令行运行：  
 > cd  一个自定义的工程路径/     #such as  cd E:\djtest  
-> E:\djtest>  django-admin.py startproject  first_test  
+> E:\djtest>  django-admin startproject  first_test  
 > E:\djtest>  cd first_test  
 > E:\djtest\first_test >  python manage.py runserver 0.0.0.0:8000    # keep on-line ,don’t quit   
 
