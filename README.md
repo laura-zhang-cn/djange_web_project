@@ -43,7 +43,7 @@ http://127.0.0.1:8000/   # remind some words such as   ".....work succefully..."
     # url第一个参数pattern是匹配的网址的路径 ,第二个参数是要调用的函数  
     urlpatterns=[   
             url(r'^first$',view.ftest),     # 访问 127.0.0.1:8000/first 页面显示ftest的内容
-            url(r'^$',view.ftest)     # 访问 127.0.0.1:8000/  页面显示hpage的内容
+            url(r'^$',view.hpage)     # 访问 127.0.0.1:8000/  页面显示hpage的内容
     ]   
     ----------------  
     
